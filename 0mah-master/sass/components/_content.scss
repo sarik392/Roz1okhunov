@@ -1,0 +1,94 @@
+#content {
+    padding: 100px 0;
+
+    .con_board {
+        border: 1px solid transparent;
+        padding: 20px;
+        padding-left: 35px;
+        padding-bottom: 25px;
+        transition: all linear 0.3s;
+        -webkit-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        -ms-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
+
+        .hh {
+            display: flex;
+            justify-content: space-between;
+
+            h6 {
+                @include fon ($fcolor, 16px, 500, unset, left, normal);
+
+                &:first-child {
+                    padding-bottom: 5px;
+                }
+            }
+
+            .ho {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: ' ';
+                    left: -35px;
+                    top: 0;
+                    width: 8px;
+                    height: 30px;
+                    background: $mcolor;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                }
+            }
+
+            span {
+                color: $mcolor;
+                text-align: right;
+                display: inline-block;
+            }
+        }
+
+        .hoo {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: ' ';
+                left: -5px;
+                top: -5px;
+                width: 40px;
+                height: 30px;
+                background: #D6D5C7;
+                z-index: -1;
+            }
+        }
+
+        &:hover {
+            border: 1px solid $bcolor;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+    }
+
+    p {
+        @include fon3;
+        padding-top: 5px;
+        padding-bottom: 50px;
+    }
+
+    i {
+        padding-left: 15px;
+    }
+}
+
+.c_head {
+    h3 {
+        @include fon ($fcolor, 36px, 600, unset, left, normal);
+        padding-bottom: 60px;
+    }
+}

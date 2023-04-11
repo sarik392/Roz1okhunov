@@ -1,0 +1,22 @@
+footer{
+    padding: 40px 0;
+    background: #203239;
+
+    .logo{
+        a{
+            color: $bcolor;
+            
+            span{
+                color: $bcolor;
+            }
+        }
+    }
+
+    i{
+        color: $bcolor;
+    }
+
+    svg{
+        margin-top: 5px;
+    }
+}

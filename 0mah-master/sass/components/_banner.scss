@@ -1,0 +1,99 @@
+#banner {
+    position: relative;
+
+    h1 {
+        @include fon2;
+        padding-top: 45px;
+    }
+
+    p {
+        @include fon3;
+        padding: 25px 0;
+    }
+
+    .form-control {
+        position: relative;
+        padding-left: 55px;
+        border: none;
+        width: 675px;
+        height: 70px;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        margin: 23px 0 48px;
+
+        &:focus {
+            box-shadow: none;
+            border: none;
+        }
+    }
+
+    .btn {
+        position: absolute;
+        right: 190px;
+        top: 41px;
+        width: 140px;
+        height: 50px;
+        background: $fcolor;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        transition: all linear 0.3s;
+        -webkit-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        -ms-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
+        box-shadow: 0 6px 8px 0 rgba(32, 50, 57, 0.25);
+
+        &:focus {
+            box-shadow: none;
+            border: none;
+        }
+
+        &:hover {
+            background: $mcolor;
+        }
+    }
+
+    nav {
+        i {
+            position: absolute;
+            left: 23px;
+            top: 55px;
+            z-index: 2;
+            font-size: 22px;
+            color: #203239;
+        }
+    }
+
+    .bb{
+        h4{
+            @include fon2;
+            position: relative;
+
+            i{
+                color: $mcolor;
+                font-size: 35px;
+                position: absolute;
+                top: 22px;
+                padding-left: 4px;
+            }
+        }
+    
+        span{
+            @include fon3;
+        }
+    }
+
+    img{
+        position: absolute;
+        right: 104px;
+        top: 0;
+    }
+}
